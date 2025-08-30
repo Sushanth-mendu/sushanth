@@ -1,0 +1,10 @@
+streamlit
+PyPDF
+transformers
+torch
+python-dotenv
+langchain
+langchain-huggingface
+langchain-core
+langchain-text-splitters
+PyMuPDF
