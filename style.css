@@ -1,0 +1,54 @@
+/* Background - black to purple gradient */
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, #000000, #3b0066, #8000ff);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    color: white;
+    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Smooth gradient animation */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Chat bubbles */
+.stChatMessage {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 12px 16px;
+    margin: 8px 0;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+/* iOS 16-style "liquid glass" buttons */
+button {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    border-radius: 20px !important;
+    padding: 10px 20px !important;
+    color: white !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25) !important;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 28px rgba(0,0,0,0.35) !important;
+}
+
+/* Button click effect */
+button:active {
+    transform: translateY(0px);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2) !important;
+}
